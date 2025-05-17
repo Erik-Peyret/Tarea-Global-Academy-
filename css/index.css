@@ -1,0 +1,139 @@
+:root { 
+    /* 🎨 Colores base de marca */
+    --color-principal: #007BFF; /* Azul Técnico: color principal para botones, enlaces activos y elementos destacados */
+    --color-secundario:#343A40; /* Gris Oscuro: texto fuerte, encabezados, fondo de barra de navegación */
+
+    /* 🎨 Colores de fondo y estructura */
+    --color-fondo:#F8F9FA; /* Gris Claro: fondo general del sitio, secciones, tarjetas */
+    --color-blanco:#ffffff; /* Blanco Puro: se usa para contrastes y limpieza visual */
+
+    /* 🎨 Tipografía */
+    --fuente-principal:'Roboto', sans-serif;
+    --fuente-titulos:'Montserrat', sans-serif;
+
+}
+
+body {
+    font-family: var(--fuente-titulos);
+    background-color:  var(--color-fondo);
+    color: var(--color-secundario);
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Encabezado */
+
+header {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-family: var(--fuente-principal);
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Navegación */
+
+h2 {
+    font-family: var(--fuente-principal);
+    padding: 1rem 2rem;
+}
+
+nav a {
+    color: var(--color-blanco);
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.menu-list {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lista-servicios {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+nav a:hover {
+    color:var(--color-principal);
+}
+
+/* Contacto (Formulario) */
+
+.datos {
+    margin-left: 1rem;
+}
+
+.datos , textarea { /* Campo de consulta */
+    width: 60%;
+    flex-basis: 60%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.datos input { /* Campos de formulario */
+    width: 40%;
+    flex-basis: 40%;
+    margin-bottom: 5px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.enviar { /* Boton enviar */
+    background-color: var(--color-principal);
+    cursor: pointer;
+    color: var(--color-blanco);
+}
+
+/* Estilo de tabla de Tienda */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--fuente-principal);
+  background-color: var(--color-blanco);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  font-family: var(--fuente-titulos);
+  text-align: left;
+  padding: 0.75rem;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-fondo);
+  color: var(--color-secundario);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-fondo); /* filas pares más claras */
+}
+
+tr:hover {
+  background-color: #e9f2ff; /* pequeño efecto hover */
+}
+
+/* Pie de pagina */
+
+footer {
+    text-align: right;
+}
