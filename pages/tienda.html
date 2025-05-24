@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ar">
   <head>
     <!-- Meta data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
-    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/modo_oscuro.css" />
+    <meta name="title" content="ErikTech - Tienda">
+    <meta name="keywords" content="Equipos, Tienda, Catalogo, Productos">
+    <meta name="description" content="Mira nuestro catalogo de productos aqui.">
+    <title>Tienda</title>
+    <link rel="icon" href="../assets/Iconos/favicon.ico" type="image/ico">
   </head>
 
   <body>
@@ -23,7 +28,10 @@
     </header>
 
     <!-- Fotos de productos -->
-    <main>
+    <main class="contenido">
+    <!-- Checkbox para alternar modo -->
+    <input type="checkbox" id="toggle-dark">
+    <label for="toggle-dark">🌙 Modo oscuro
       <section id="tienda">
         <h2>Nuestros productos</h2>
         <table>
@@ -41,6 +49,7 @@
                 <td>$535.599</td>
                 <td>$11.321.981</td>
                 <td>$231.000</td>
+            </label>
             </tbody>
         </table>
       </section>

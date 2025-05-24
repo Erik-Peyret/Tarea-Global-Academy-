@@ -1,0 +1,87 @@
+/* estilos.css */
+
+body {
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Diseño general */
+.contenido {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Ocultar checkbox, usar solo el label */
+#toggle-dark {
+  display: none;
+}
+
+label[for="toggle-dark"] {
+  cursor: pointer;
+  background: #ddd;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: block;
+  margin: 20px;
+  font-weight: bold;
+}
+
+form.datos {
+display: flexbox;       /* o flex si querés alineación */
+justify-content: center;
+width: 50%;          /* ocupa todo el ancho disponible */
+margin: 0 auto;       /* centrado */
+}
+
+/* Adaptando contenido */
+
+form.datos input[type="text"],
+form.datos input[type="email"],
+form.datos input[type="tel"],
+form.datos textarea {
+  width: 100%;          /* Ocupar todo el ancho del contenedor */
+  padding: 12px 16px;   /* Más espacio interno */
+  font-size: 12px;      /* Texto más grande */
+  margin-bottom: 12px;  /* Espacio entre campos */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Que padding no rompa el ancho */
+}
+
+form.datos textarea {
+  height: 50px;        /* Altura del área de texto */
+  resize: vertical;     /* Permitir redimensionar verticalmente */
+}
+
+form.datos input.enviar {
+  width: auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form.datos input.enviar:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Modo oscuro si el checkbox está marcado */
+#toggle-dark:checked ~ .contenido {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Cambiar apariencia del botón en modo oscuro */
+#toggle-dark:checked + label {
+  background: #444;
+  color: #fff;
+}

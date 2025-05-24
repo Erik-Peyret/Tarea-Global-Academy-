@@ -1,11 +1,16 @@
 <!DOCTYPE html> 
-<html lang="es">
+<html lang="es-ar">
   <head>
     <!-- Meta data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/modo_oscuro.css" />
+    <meta name="title" content="ErikTech - Servicio tecnico">
+    <meta name="keywords" content="Software, Hardware, Servicio, Tecnico, Windows, Optimizacion">
+    <meta name="description" content="Solucionamos problemas de Software y Hardware.">
     <title>ErikTech</title>
+    <link rel="icon" href="../assets/Iconos/favicon.ico" type="image/ico">
   </head>
 
   <body>
@@ -23,7 +28,10 @@
     </header>
 
     <!-- Contenido principal de la pagina web -->
-    <main>
+    <main class="contenido">
+    <!-- Checkbox para alternar modo -->
+    <input type="checkbox" id="toggle-dark">
+    <label for="toggle-dark">🌙 Modo oscuro
       <section class="servicios">
         <h2>Nuestros servicios</h2>
         <ul class="lista-servicios">
@@ -75,6 +83,7 @@
               height="16px"
               width="16px"/>
             Backup y Recuperacion de Archivos.
+            </label>
           </li>
         </ul>
       </section>

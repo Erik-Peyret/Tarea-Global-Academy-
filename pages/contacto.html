@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ar">
   <head>
     <!-- Meta data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/modo_oscuro.css" />
+    <meta name="title" content="ErikTech - Contacto">
+    <meta name="keywords" content="Contacto, Formulario, Datos">
+    <meta name="description" content="Contactanos por aqui, dejanos tus datos.">
     <title>Contacto</title>
+    <link rel="icon" href="../assets/Iconos/favicon.ico" type="image/ico">
   </head>
 
   <body>
@@ -23,7 +28,10 @@
     </header>
 
     <!-- Contenido principal de la pagina web -->
-    <main>
+    <main class="contenido">
+    <!-- Checkbox para alternar modo -->
+    <input type="checkbox" id="toggle-dark">
+    <label for="toggle-dark">🌙 Modo oscuro
       <section id="contacto">
         <h2>Contacto</h2>
         <!-- Formulario de contacto -->
@@ -37,6 +45,7 @@
             required/>
           <textarea maxlength="250" placeholder="Escribe tu consulta"></textarea>
           <input type="submit" value="Enviar" class="enviar" />
+        </label>
         </form>
       </section>
     </main>
