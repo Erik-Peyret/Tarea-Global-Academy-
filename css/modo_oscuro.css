@@ -1,14 +1,13 @@
 /* estilos.css */
 
 body {
-  margin: 0;
   transition: background 0.3s, color 0.3s;
 }
 
 /* Diseño general */
 .contenido {
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 65px;
+  background-color: rgba(000, 000, 000, 0.2);
   color: #000000;
   transition: background 0.3s, color 0.3s;
 }
@@ -58,7 +57,7 @@ form.datos textarea {
 
 form.datos input.enviar {
   width: auto;
-  background-color: #007bff;
+  background-color: #28A745;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -69,7 +68,7 @@ form.datos input.enviar {
 }
 
 form.datos input.enviar:hover {
-  background-color: #0056b3;
+  background-color: #1e7933;
 }
 
 
