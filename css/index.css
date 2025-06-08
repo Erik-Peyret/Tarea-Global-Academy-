@@ -54,6 +54,7 @@ nav {
     display: inline;
     width: 100%;
     border-radius: 6px;
+    z-index: 3;
 
 
 }
@@ -150,3 +151,54 @@ tr:hover {
 footer {
     text-align: right;
 }
+
+
+/* Tarjetas */
+
+.tarjetas-servicio {
+  background-color: #F8F9FA; /* Gris claro */
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tarjeta-servicio {
+  float: left;
+  width: 24%;
+  margin-right: 1.33%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+
+.tarjeta-servicio:nth-child(4) {
+  margin-right: 0;
+}
+
+.filtro-servicio {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Filtro oscuro */
+  z-index: 1;
+}
+
+.contenido-servicio {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.contenido-servicio h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+
